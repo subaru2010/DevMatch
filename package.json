@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Alferguson/DevMatch/issues"
   },
-  "homepage": "https://github.com/Alferguson/DevMatch#readme"
+  "homepage": "https://github.com/Alferguson/DevMatch#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
 }
