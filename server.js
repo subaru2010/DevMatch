@@ -2,8 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
-const db = require("./models");
-const routes = require("./routes");
+// const db = require("./models");
+const controllers = require("./controllers");
 const ssSdk = require("smartsheet");
 
 const app = express();
@@ -16,8 +16,8 @@ app.use(bodyParser.json({ limit: "50mb" }));
 // Serve up static assets
 app.use(express.static("client/build"));
 
-// API routes
-app.use(routes);
+// API controllers
+app.use(controllers);
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 app.listen(PORT, () => {

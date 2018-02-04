@@ -21,6 +21,7 @@
     "dotenv": "^5.0.0",
     "express": "^4.16.2",
     "method-override": "^2.3.10",
+    "path": "^0.12.7",
     "smartsheet": "^1.0.4"
   }
 }
