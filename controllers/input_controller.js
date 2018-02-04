@@ -59,7 +59,6 @@ router.post("/create", (req, res) => {
         .catch(function (err) {
             console.log(err);
         });
-});
+})
 
 module.exports = router;
-
